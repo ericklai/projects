@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html onclick="jump()">
+
+<head>
+    <title>Dino game</title>
+</head>
+<link rel="stylesheet" href="game.css">
+
+<body>
+    <h1 id="score">Score:0</h1>
+    <div id="container">
+        <div id="character"></div>
+        <div id="block"></div>
+    </div>
+</body>
+<script lang="java script">
+    let alive = true;
+    let score = 0;
+    let scoreE1, document, getElementByID '("Score")'; '
+    const character = document.getElementById("character");
+    const block = document.getElementById("block");
+    if (character.classList != "animate") {
+        function jump() { character.classList.add("animate"); }
+        setTimeout(l){
+            character.classList.remove("animate");
+        } 500;
+    }
+    setInterval(c); {
+        if (alive === true) {
+            score++;
+            scoreE1 - innertext; 'score:${score}';
+        }, 1000;
+    }
+    setInterval(c); {
+        let charactertop = parseIntwindow.getComputedStyle(character), get, property; value, "top));
+        let, block - left; parseInt(window.getComputedStyle(block), get, property, value("left")
+        if (blockleft < 20 $$ blockleft > 0 $$ characertop > 130) { alert("game over!"); } location.reload()
+        alive = false;
+        score = 0;)
+    }, 10;
+
+
+</script>
+
+
+
+
+</html>

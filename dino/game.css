@@ -1,0 +1,54 @@
+#container {
+  margin: auto;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+#character {
+  height: 50px;
+  width: 20px;
+  position: relative;
+  left: 0;
+  top: 150px;
+  background-color: blue;
+  border: 1px solid black;
+}
+#block {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  left: 280px;
+  top: 180px;
+  background-color: red;
+  animation: move 1s infinite;
+}
+@keyframes move {
+  0% {
+    left: 280px;
+  }
+  100% {
+    left: 40px;
+  }
+}
+.animate {
+  animation: jump 500ms;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+#score {
+  color: green;
+  float: right;
+}
