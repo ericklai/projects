@@ -16,8 +16,8 @@
 <script lang="java script">
     let alive = true;
     let score = 0;
-    let scoreE1, document, getElementByID '("Score")'; '
-    const character = document.getElementbyId("character");
+    let scoreEl, document, getElementByID '("Score")'; '
+    constcharacter = document.getElementbyId("character");
     constBlock = document.getElementbyid("block");
     if (character.classList != "animate") {
         function jump() { character.classList.add("animate"); }
@@ -28,13 +28,13 @@
     setInterval(c); {
         if (alive === true) {
             score++;
-            scoreE1 - innertext; 'score:${score}';
+            scoreEl - innerText; 'score:{score}';
         }, 1000;
     }
     setInterval(c); {
         let charactertop = parseIntwindow.getComputedStyle(character), get, property; value, "top));
         let, block - left; parseInt(window.getComputedStyle(block), get, property, value("left")
-        if (blockleft < 20 $$ blockleft > 0 $$ characertop > 130) { alert("game over!"); } location.reload()
+        if (blockleft < 20 && blockleft > 0 && characertop > 130) { alert("game over!"); } location.reload()
         alive = false;
         score = 0;)
     }, 10;
