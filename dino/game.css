@@ -23,7 +23,7 @@
   background-color: red;
   animation: move 1s infinite;
 }
-@keyframes move {
+@keyframes:move {
   0% {
     left: 280px;
   }
